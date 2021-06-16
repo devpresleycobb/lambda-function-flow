@@ -1,4 +1,5 @@
 import os
 
 def lambda_handler(event, context):
-    print(os.environ['PARAM'])
+    param = {os.environ['PARAM']}
+    print(f'The version is: {param}')
